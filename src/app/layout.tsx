@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Ecommerce",
+  metadataBase: new URL(`${process.env.SITE_URL}`),
 };
 
 export default function RootLayout({
