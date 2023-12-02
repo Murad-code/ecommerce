@@ -7,7 +7,8 @@ type Props = {
 };
 
 export default function PaginationBar({ currentPage, totalPages }: Props) {
-  const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 0));
+  // Determines the min and max page numbers range for pagination (so it doesn't bloat the pagination bar if products count becomes too large)
+  const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 10));
   const minPage = Math.max(1, Math.min(currentPage - 5, maxPage - 9));
 
   const numberedPageItems: JSX.Element[] = [];
@@ -21,7 +22,7 @@ export default function PaginationBar({ currentPage, totalPages }: Props) {
         }`}
       >
         {page}
-      </Link>
+      </Link>,
     );
   }
   return (
@@ -33,7 +34,9 @@ export default function PaginationBar({ currentPage, totalPages }: Props) {
             «
           </Link>
         )}
-        <button className="join-item btn pointer-events-none">Page: {currentPage}</button>
+        <button className="btn join-item pointer-events-none">
+          Page: {currentPage}
+        </button>
         {currentPage < totalPages && (
           <Link href={`?page=${currentPage + 1}`} className="btn join-item">
             »
