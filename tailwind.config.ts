@@ -10,7 +10,7 @@ const config: Config = {
     themes: [
       {
         lightTheme: {
-          primary: "#f4aa3a",
+          primary: "#5a4ae3",
           secondary: "#f4f4a1",
           accent: "#1be885",
           neutral: "#272136",

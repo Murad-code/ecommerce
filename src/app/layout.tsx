@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ecommerce",
+  metadataBase: new URL("https://ecommerce-pne6c9q86-murad-code.vercel.app"),
+  openGraph: {
+    images: "/opengraph-image.svg",
+  },
 };
 
 export default function RootLayout({
