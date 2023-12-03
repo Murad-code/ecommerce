@@ -8,8 +8,8 @@ import SessionProvider from "./SessionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ecommerce",
-  metadataBase: new URL("https://ecommerce-pne6c9q86-murad-code.vercel.app"),
+  title: "Ecommerce Platform",
+  metadataBase: new URL("https://ecommerce-git-main-murad-code.vercel.app"),
   openGraph: {
     images: "/opengraph-image.svg",
   },
