@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Ecommerce Platform",
   metadataBase: new URL("https://ecommerce-git-main-murad-code.vercel.app"),
   openGraph: {
-    images: "/opengraph-image.svg",
+    images: "/opengraph-image.png",
   },
 };
 
